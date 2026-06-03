@@ -35,18 +35,3 @@ keymap("n", "<C-j>", "<C-w>j", { desc = "Go to lower window" })
 keymap("n", "<C-k>", "<C-w>k", { desc = "Go to upper window" })
 keymap("n", "<C-l>", "<C-w>l", { desc = "Go to right window" })
 
--- mini.files (file browser)
-keymap("n", "<leader>e", function() require("mini.files").open() end, { desc = "Open file browser" })
-
--- mini.pick (fuzzy finder)
-keymap("n", "<leader>ff", function() require("mini.pick").builtin.files() end, { desc = "Find files" })
-keymap("n", "<leader>fg", function() require("mini.pick").builtin.grep() end, { desc = "Grep text" })
-keymap("n", "<leader>fb", function() require("mini.pick").builtin.buffers() end, { desc = "Find buffers" })
-
--- LSP
-keymap("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
-keymap("n", "gr", vim.lsp.buf.references, { desc = "Find references" })
-keymap("n", "K", vim.lsp.buf.hover, { desc = "Hover docs" })
-keymap("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code action" })
-keymap("n", "<leader>rn", vim.lsp.buf.rename, { desc = "Rename" })
-keymap("n", "<leader>f", function() vim.lsp.buf.format({ async = true }) end, { desc = "Format" })
