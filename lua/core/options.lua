@@ -13,3 +13,5 @@ opt.clipboard = "unnamedplus" -- 共享系统剪贴板
 opt.ignorecase = true       -- 搜索时忽略大小写
 opt.smartcase = true        -- 搜索时智能匹配大小写
 opt.wrap = false            -- 禁止自动换行
+opt.signcolumn = "yes"      
+opt.winborder = "rounded"   -- 窗口边框样式
